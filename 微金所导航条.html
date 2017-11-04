@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>微金所导航条</title>
+    <!-- Bootstrap -->
+    <link href="./lib/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .container {
+            margin: auto;
+        }
+        .navbar {
+            border: none;
+            height: 80px;
+        }
+        .navbar-header {
+            height: 80px;
+            line-height: 80px;
+        }
+        .navbar-nav>li>a {
+            height: 100%;
+            padding: 0px 15px;
+            line-height: 80px;
+        }
+        .navbar-nav>li>b {
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: red;
+            display: none;
+        }
+        .navbar-nav>li:hover b {
+            display: block;
+        }
+        button.navbar-toggle.collapsed{
+            margin-top: calc((80px - 34px)/2 );
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle bread-btn collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="./images/logo.png">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse in" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="javascript:;">我要投资</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="javascript:;">我要借贷</a>
+                    <b></b>
+                </li>
+                <li><a href="javascript:;">平台介绍</a><b></b></li>
+                <li><a href="javascript:;">新手专区</a><b></b></li>
+                <li><a href="javascript:;">最新动态</a><b></b></li>
+                <li><a href="javascript:;">微平台</a><b></b></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">个人中心</a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jQuery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.js"></script>
+</body>
+</html>

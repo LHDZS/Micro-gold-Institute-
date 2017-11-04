@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>微金所微投资</title>
+    <link href="./lib/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .num {
+            width: 100%;
+            padding: 8px 8px;
+        }
+        .box {
+            width: 100%;
+            height: 200px;
+            padding-right: 80px;
+            position: relative;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            background-color: #f3f3f3;
+            position: relative;
+        }
+        .box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box-left {
+            width: 100%;
+            height: 100%;
+            float: left;
+            padding: 10px;
+            position: relative;
+            border-right: 1px dashed #333;
+        }
+        .box-left h3 {
+            text-align: center;
+            font-size: 22px;
+            color: #337ab7;
+            text-decoration:underline;
+        }
+        .box-left ul {
+            padding: 0;
+            list-style:none;
+            overflow: hidden;
+        }
+        .box-left li {
+            font-size: 16px;
+        }
+        .box-left li:nth-child(1) {
+            float: left;
+        }
+        .box-left li:nth-child(2){
+            float: right;
+        }
+        .box-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 80px;
+            height: 100%;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .box-left::after{
+             content:"";
+             width: 14px;
+             height: 14px;
+             border-radius: 50%;
+             position: absolute;
+             top: -5px;
+             right: -7px;
+             background-color: #fff;
+             z-index: 10;
+             box-shadow-bottom: 0px 0px 3px rgba(0, 0, 0, 1)inset;
+         }
+        .box-left::before{
+            content:"";
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -5px;
+            right: -7px;
+            background-color: #fff;
+            z-index: 10;
+            box-shadow-bottom: 0px 0px 3px rgba(0, 0, 0, 1)inset;
+        }
+        #tow {
+            background-color: red;
+            color: white;
+        }
+        #tow h3 {
+            color: white;
+        }
+        .long {
+            border-radius: 5px;
+            width: 160px;
+            height: 15px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)inset
+        }
+        .short {
+            width: 96px;
+            height: 15px;
+            background-color: #7a7adb;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+        }
+        .honey span:nth-child(1) {
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+            padding: 2px;
+        }
+        .honey span:nth-child(2) {
+            color: red;
+            border: 1px solid red;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="wtz">
+    <div class="container-fluid">
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active var" id="home">
+                    <div class="row">
+                        <div class="num">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-left">
+                                        <h3>新手体验</h3>
+                                        <ul>
+                                            <li>起投金额</li>
+                                            <li>起投金额</li>
+                                        </ul>
+                                        <ul>
+                                            <li>0.01万</li>
+                                            <li>0.01万</li>
+                                        </ul>
+                                        <ul>
+                                            <li>借款期限</li>
+                                            <li>借款期限</li>
+                                        </ul>
+                                        <ul>
+                                            <li>10天</li>
+                                            <li>10天</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>8</p>
+                                        <span>年利率</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div id="tow" class="box">
+                                    <img src="./images/tiyan.png" alt=""/>
+                                    <div class="box-left">
+                                        <h3>新手体验</h3>
+                                        <ul>
+                                            <li>起投金额</li>
+                                            <li>起投金额</li>
+                                        </ul>
+                                        <ul>
+                                            <li>0.01万</li>
+                                            <li>0.01万</li>
+                                        </ul>
+                                        <ul>
+                                            <li>借款期限</li>
+                                            <li>借款期限</li>
+                                        </ul>
+                                        <ul>
+                                            <li>10天</li>
+                                            <li>10天</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>8</p>
+                                        <span>年利率</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-left">
+                                        <h3>新手体验</h3>
+                                        <ul>
+                                            <li>起投金额</li>
+                                            <li>起投金额</li>
+                                        </ul>
+                                        <ul>
+                                            <li>0.01万</li>
+                                            <li>0.01万</li>
+                                        </ul>
+                                        <ul>
+                                            <li>借款期限</li>
+                                            <li>借款期限</li>
+                                        </ul>
+                                        <ul>
+                                            <li>10天</li>
+                                            <li><div class="long"><div class="short">60%</div></div></li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-right">
+                                        <div class="honey">
+                                            <span>宝</span>
+                                            <span>贝</span>
+                                        </div>
+                                        <p>8</p>
+                                        <span>年利率</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-left">
+                                        <h3>新手体验</h3>
+                                        <ul>
+                                            <li>起投金额</li>
+                                            <li>起投金额</li>
+                                        </ul>
+                                        <ul>
+                                            <li>0.01万</li>
+                                            <li>0.01万</li>
+                                        </ul>
+                                        <ul>
+                                            <li>借款期限</li>
+                                            <li>借款期限</li>
+                                        </ul>
+                                        <ul>
+                                            <li>10天</li>
+                                            <li>10天</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>8</p>
+                                        <span>年利率</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile"></div>
+                    <div role="tabpanel" class="tab-pane" id="messages"></div>
+                    <div role="tabpanel" class="tab-pane" id="settings"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jQuery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.js"></script>
+</body>
+</html>
